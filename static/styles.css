@@ -1,0 +1,119 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+header .logo img {
+    max-width: 100px;
+    border-radius: 8px;
+}
+
+/* Breed list styles */
+.breed-list ul {
+    list-style-type: none;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.breed-list li {
+    background-color: #fff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    width: 250px;
+    text-align: center;
+}
+
+.breed-list li:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.breed-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+/* Masonry (Collage) Image Gallery Styles */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  /* Space between the images */
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.image-item {
+    position: relative;
+    width: 220px;  /* Fixed width */
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    object-fit: cover;  /* Ensure image scales correctly */
+    margin-bottom: 20px;
+}
+
+/* Apply varying heights to images to create the collage effect */
+.image-item:nth-child(odd) {
+    height: 300px;  /* Make odd images taller */
+}
+
+.image-item:nth-child(even) {
+    height: 250px;  /* Make even images shorter */
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures images cover the space without distortion */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for images */
+.image-item:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 1.2rem;
+}
